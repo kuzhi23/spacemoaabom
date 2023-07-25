@@ -1,0 +1,51 @@
+{
+  "name": "space-moaabom",
+  "description": "space-moaabom-front",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev --turbo -p 4000",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "lint": "next lint",
+    "export": "next export",
+    "deploy:prod": "pm2 startOrRestart ecosystem.config.js --env production && pm2 save"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.15",
+    "eslint-config-prettier": "^8.8.0",
+    "moment": "^2.29.4",
+    "next": "13.4.7",
+    "nodemailer": "^6.9.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-naver-maps": "^0.1.2",
+    "react-responsive-carousel": "^3.2.23",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@types/navermaps": "^3.6.5",
+    "@types/node": "20.3.1",
+    "@types/nodemailer": "^6.4.8",
+    "@types/react": "18.2.13",
+    "@types/react-dom": "18.2.6",
+    "@types/react-slick": "^0.23.10",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-next": "13.4.7",
+    "eslint-plugin-file-progress": "^1.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.8.8",
+    "react-slick": "^0.29.0",
+    "typescript": "5.1.3"
+  }
+}
